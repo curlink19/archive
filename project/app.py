@@ -6,7 +6,7 @@ from flask import Flask, request, redirect, url_for, render_template, send_from_
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = os.path.dirname(os.path.realpath(__file__)) + '/static'
-ALLOWED_EXTENSIONS = set(['txt', 'pdf'])
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'cpp', 'jpg', 'mp4'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
